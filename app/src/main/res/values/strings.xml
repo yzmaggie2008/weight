@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">WeightLoss</string>
+    <string name="title_history">History</string>
+    <string name="title_setting">Setting</string>
+    <string name="title_information">Information</string>
+    <string name="camera_add">Take Photo</string>
+    <string name="camera_gallery">Choose from Gallery</string>
+    <string name="camera_cancel">Cancel</string>
+</resources>

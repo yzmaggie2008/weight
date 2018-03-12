@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yumimama.weightloss.setting">
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/navigation" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="450dp">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="200dp"
+            android:layout_height="140dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:text="You can using the camera function to save or view the picture you saved. Click the button below to start your process!" />
+
+        <Button
+
+            android:id="@+id/btn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="37dp"
+            android:fontFamily="casual"
+            android:text="Select Photo" />
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_above="@+id/et1"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="29dp"
+            android:layout_marginRight="29dp" />
+
+        <EditText
+            android:id="@+id/et1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/et2"
+            android:layout_alignLeft="@+id/et2"
+            android:layout_alignStart="@+id/et2"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:fadingEdgeLength="10dp"
+            android:hint="Enter your weight in KGs"
+            android:inputType="numberDecimal"
+            android:textAlignment="center">
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/et2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ib1"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:hint="Enter your height in CMs"
+            android:inputType="numberDecimal"></EditText>
+
+        <Button
+            android:id="@+id/ib1"
+            android:layout_width="158dp"
+            android:layout_height="51dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="74dp"
+            android:fadingEdge="vertical"
+            android:longClickable="true"
+
+            android:text="Calculate"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="17dp"
+            android:paddingTop="20dp"
+            android:text=""
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
